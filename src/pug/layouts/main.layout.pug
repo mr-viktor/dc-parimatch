@@ -1,0 +1,24 @@
+include common/mixins
+block vars
+
+doctype html
+html.no-js(lang=data.siteInfo.language)
+  head
+    meta(charset=data.siteInfo.charset)
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="format-detection", content="telephone=no")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title= page.title + ' | ' + page.description
+    meta(name="description", content=page.description)
+    include common/meta
+    link(href="css/main.css", rel="stylesheet")
+  body.site
+    .u-hidden
+      include ../../images/svg/sprite/icon-sprite.svg
+    .site__wrapper
+      include blocks/header
+      main.content
+        block content
+      include blocks/footer
+    script(src="js/vendors~main.bundle.js")
+    script(src="js/main.bundle.js")

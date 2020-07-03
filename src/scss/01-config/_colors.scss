@@ -1,0 +1,21 @@
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0, 0);
+$yellow: hsl(62, 100%, 54%);
+
+$body-color-bg: $white;
+$selection-color: $black;
+$text-color: $black;
+$icon-color: $white;
+
+$brand-color: var(--brand-color, $yellow);
+
+:root {
+  --brand-color-h: 62;
+  --brand-color-s: 100%;
+  --brand-color-l: 54%;
+
+  --brand-color-hsl: var(--brand-color-h), var(--brand-color-s),
+    var(--brand-color-l);
+
+  --brand-color: hsl(var(--brand-color-hsl));
+}

@@ -1,0 +1,3 @@
+public/**/*.css
+src/**/*.js
+node_modules/**/*.*
