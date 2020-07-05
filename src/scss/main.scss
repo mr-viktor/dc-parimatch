@@ -23,15 +23,19 @@
  *# 04-globals
  *-------------------------------------------------------------- */
 @import "04-globals/layout";
-@import "04-globals/header";
-@import "04-globals/footer";
 
 /*--------------------------------------------------------------
  *# 05-components
  *-------------------------------------------------------------- */
 @import "05-components/buttons";
+@import "05-components/social-media-profiles";
+@import "05-components/app-store";
+@import "05-components/payment-methods";
+@import "05-components/responsible-gaming";
 
 /*--------------------------------------------------------------
  *# 06-blocks
  *-------------------------------------------------------------- */
 @import "06-blocks/block";
+@import "06-blocks/header";
+@import "06-blocks/footer";
