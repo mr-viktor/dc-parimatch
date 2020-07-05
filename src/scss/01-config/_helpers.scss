@@ -1,3 +1,61 @@
 .u-hidden {
   display: none !important;
 }
+
+.u-sr-only {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+
+  &:focus {
+    background-color: $body-color-bg;
+    clip: auto !important;
+    clip-path: none;
+    color: $brand-color;
+    display: block;
+    font-size: 1em;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+  }
+}
+
+.u-undecorated-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.u-icons-list {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -10px;
+  margin-top: -10px;
+
+  li {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: opacity $transition;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

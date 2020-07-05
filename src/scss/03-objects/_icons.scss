@@ -1,8 +1,5 @@
 .icon {
   display: inline-block;
+  transition: all $transition;
   vertical-align: middle;
-}
-
-.icon--white {
-  fill: $icon-color;
 }

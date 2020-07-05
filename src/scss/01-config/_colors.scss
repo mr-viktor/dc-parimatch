@@ -5,7 +5,10 @@ $yellow: hsl(62, 100%, 54%);
 $body-color-bg: $white;
 $selection-color: $black;
 $text-color: $black;
-$icon-color: $white;
+$icon-color: currentColor;
+
+$footer-color: $white;
+$footer-color-bg: rgba($black, 0.8);
 
 $brand-color: var(--brand-color, $yellow);
 

@@ -1,0 +1,80 @@
+.footer {
+  align-items: center;
+  background-color: $footer-color-bg;
+  bottom: 0;
+  color: $footer-color;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 108px 31px 59px;
+  position: absolute;
+  width: 100%;
+
+  @include media-down(1024) {
+    align-items: flex-start;
+    padding: 32px 49px 56px 27px;
+  }
+
+  @include media-down(767) {
+    flex-wrap: wrap;
+    padding: 21px 18px 29px 27px;
+  }
+}
+
+.footer__group {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include media-down(767) {
+    flex: 0 0 34%;
+    max-width: 34%;
+  }
+}
+
+.footer__payment-methods {
+  @include media-down(767) {
+    flex: 0 0 66%;
+    max-width: 66%;
+  }
+}
+
+.footer__app-store {
+  margin-right: 123px;
+
+  @include media-down(960) {
+    margin-right: 133px;
+  }
+
+  @include media-down(767) {
+    flex: 0 0 100%;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 24px;
+    max-width: 100%;
+    order: -1;
+  }
+}
+
+.footer__social-media-profiles {
+  @include media-down(1024) {
+    flex: 0 0 100%;
+    justify-content: flex-end;
+  }
+}
+
+.footer__responsible-gaming {
+  justify-content: flex-start;
+  margin-right: 102px;
+  order: -1;
+
+  @include media-down(1024) {
+    flex: 0 0 100%;
+    justify-content: flex-end;
+    margin-right: 0;
+    margin-top: 10px;
+    max-width: 100%;
+    order: inherit;
+  }
+}
