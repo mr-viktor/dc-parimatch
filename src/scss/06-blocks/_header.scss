@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 48px 15px 77px;
+
+  @include media-down(960) {
+    padding: 30px 64px 15px 40px;
+  }
+
+  @include media-down(767) {
+    padding: 20px 8px 15px 11px;
+  }
+}
+
+.header__user-area {
+  margin-top: 8px;
+
+  @include media-down(767) {
+    margin-top: 0;
+  }
+}
+
+.header__logo {
+  flex-shrink: 0;
+}
