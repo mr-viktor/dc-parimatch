@@ -1,0 +1,73 @@
+.btn {
+  align-items: center;
+  appearance: none;
+  background-color: $brand-color;
+  border-radius: 0;
+  color: $btn-text-color;
+  cursor: pointer;
+  display: flex;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 600;
+  justify-content: center;
+  margin: auto;
+  max-width: 100%;
+  padding: 6px 40px 7px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: skew(-15deg);
+  transition: all $transition;
+  user-select: none;
+  vertical-align: middle;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $brand-color;
+
+    &:before {
+      transform: scaleX(1);
+      transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    }
+  }
+
+  &:before {
+    background: $btn-text-color;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition: transform 0.5s ease-out;
+    z-index: -1;
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: 0.3;
+  }
+
+  @include media-down(767) {
+    font-size: 13px;
+    padding: 5px 20px 6px;
+  }
+}
+
+.btn--dark-border {
+  border: 6px solid currentColor;
+
+  @include media-down(767) {
+    border-width: 5px;
+  }
+}
+
+.btn__text {
+  letter-spacing: 1px;
+  transform: skew(15deg);
+}

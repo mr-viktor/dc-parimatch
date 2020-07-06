@@ -1,0 +1,10 @@
+.logo__link {
+  display: inline-block;
+}
+
+.logo__pic {
+  @include media-down(767) {
+    height: 50px;
+    width: 148px;
+  }
+}
